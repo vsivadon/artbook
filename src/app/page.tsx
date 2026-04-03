@@ -2,7 +2,6 @@ import fs from "fs";
 import path from "path";
 import YAML from "yaml";
 import { Artwork } from "@/types/artwork";
-import MasonryGrid from "@/components/MasonryGrid";
 import Gallery from "@/components/Gallery";
 
 
