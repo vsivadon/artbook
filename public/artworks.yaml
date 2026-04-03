@@ -12,18 +12,22 @@
   image: /images/saenredam_1644.jpg
   tags:
     - neerlandais
-  rating: 2.5
+  rating: 3
   notes: |
-    Moment de la Réforme protestante, aux Pays-Bas, on prône la simplicité et la sobriété dans les églises, pour se connecter à Dieu sans distraction.
-    A contraster avec Bernini et ses effets décoratifs grandioses, très chargées et décorées, pour impressionner les fidèles et les rapprocher de Dieu par la beauté et la grandeur.
+    Moment de la Réforme protestante, aux Pays-Bas, on prône la simplicité et la
+    sobriété dans les églises, pour se connecter à Dieu sans distraction.  A
+    contraster avec Bernini et ses effets décoratifs grandioses, très chargées
+    et décorées, pour impressionner les fidèles et les rapprocher de Dieu par la
+    beauté et la grandeur.
 
 - title: L'École d'Athènes
   artist: Raphaël
   year: 1509
   image: /images/raphael_1509.webp
   tags:
+    - cinquecento
     - renaissance
-  rating: 3
+  rating: 2.5
 
 - title: Marat assassiné
   artist: Jacques-Louis David
@@ -39,7 +43,7 @@
   image: /images/picasso_1937.avif
   tags:
     - cubisme
-  rating: 3
+  rating: 2.5
 
 - title: Christ Pantocrator de Daphni
   artist: Inconnu
@@ -48,8 +52,665 @@
   tags:
     - moyen-âge
     - byzantin
+  rating: 1
+  notes: |
+    Christ Pantocrator : représentation artistique de Jésus Christ dans son
+    corps glorieux par opposition aux représentations plus humaines du Christ
+    souffrant la Passion sur la Croix, ou celle de l'Enfant-Jésus
+
+- title: Madone Rucellai
+  artist: Duccio di Buoninsegna
+  year: 1285
+  image: /images/duccio_1285.jpg
+  tags:
+    - moyen-âge
+    - byzantin
+  rating: 1.5
+  notes: |
+    Vasari dit en 1550 de cette oeuvre : 'Cette oeuvre parut tellement
+    merveilleuse aux yeux de la population qui n'avait encore rien vu de mieux
+    qu'elle fut portée en procession solennelle de la maison de Cimabue à
+    l'église au milieu d'une grande fête et au son des trompettes.'
+    Vasari attribue à tord l'oeuvre à Cimabue.
+
+- title: Noël, la crèche à Greccio
+  artist: Giotto di Bondone
+  year: 1297
+  image: /images/giotto_1297.webp
+  tags:
+    - moyen-âge
+  rating: 1
+
+- title: Saint Georges
+  artist: Donatello
+  year: 1415
+  image: /images/donatello_1415.jpg
+  tags:
+    - quattrocento
+  rating: 2.5
+
+- title: La Bataille de San Romano
+  artist: Paolo Uccello
+  year: 1456
+  image: /images/uccello_1456.jpg
+  tags:
+    - quattrocento
+  rating: 1.5
+
+- title: La Naissance de Vénus
+  artist: Botticelli
+  year: 1482
+  image: /images/botticelli_1482.webp
+  tags:
+    - quattrocento
+  rating: 2
+  notes: |
+    Cette œuvre était révolutionnaire à l'époque, car elle présentait un corps
+    nu sans aucune justification religieuse, ainsi qu'un thème mythologique issu
+    de la culture gréco-romaine antérieure au christianisme.
+
+- title: La Joconde
+  artist: Leonardo da Vinci
+  year: 1503
+  image: /images/da_vinci_1503.jpg
+  tags:
+    - cinquecento
+    - renaissance
+  rating: 2.5
+  notes: |
+    On voit dans cette oeuvre la réapparition de la mimesis, de l'immitation de
+    la nature, au cinquecento, qui avait été mise de côté pendant le Moyen-Âge
+    au profit de la symbolique et de l'abstraction.
+
+- title: La Création d'Adam
+  artist: Michel-Ange
+  year: 1512
+  image: /images/michelange_1512.jpg
+  tags:
+    - cinquecento
+    - renaissance
+  rating: 2.5
+  notes: |
+    Retour du réalisme grecque, avec des corps musclés et idéalisés, des anges
+    qui ne sont plus des cherubins mais plus proches de l'humain.
+
+- title: La Sainte Famille de François Ier
+  artist: Raphaël
+  year: 1518
+  image: /images/raphael_1518.jpg
+  tags:
+    - cinquecento
+    - renaissance
+  rating: 2
+  notes: |
+    Style tardif de Raphaël, inspiré par Michel-Ange, par la monumentalité de
+    ses personnages, et par le luminisme sombre de Leonard de Vinci.
+
+- title: Saint Michel terrassant le démon
+  artist: Raphaël
+  year: 1519
+  image: /images/raphael_1519.jpg
+  tags:
+    - cinquecento
+    - renaissance
+  rating: 2
+
+- title: Portrait de Christine de Danemark
+  artist: Hans Holbein le Jeune
+  year: 1538
+  image: /images/holbein_1538.jpg
+  tags:
+    - renaissance-du-nord
+  rating: 1.5
+  notes: |
+    Comme la Réforme condamne les images qui prétendent représenter le divin.
+    Les peintres des pays protestants doivent donc se tourner vers d'autres
+    sujets, comme les portraits, les natures mortes.
+
+- title: La Danse des paysans
+  artist: Pieter Brueghel l'Ancien
+  year: 1568
+  image: /images/brueghel_1568.jpg
+  tags:
+    - renaissance-du-nord
+  rating: 1
+  notes: |
+    Privé de taf à cause de la Réforme, c'est à dire de la condamnation des
+    images religieuses, Brueghel se tourne vers les scènes de genre, les
+    paysages, les scènes de la vie quotidienne.
+
+- title: La Tour de Babel
+  artist: Pieter Brueghel l'Ancien
+  year: 1563
+  image: /images/brueghel_1563.webp
+  tags:
+    - renaissance-du-nord
+  rating: 3.5
+  notes: |
+    Representation de l'épisode biblique de la tour de Babel. La tour prend des
+    aspects de collisé romain. La peinture est une satyre de la vanité romaine
+    et catholique, dans le contexte de la Réforme.
+
+- title: Le Martyre de saint Matthieu
+  artist: Le Caravage
+  year: 1600
+  image: /images/caravage_1600.jpg
+  tags:
+    - baroque
+  rating: 3.0
+  notes: |
+    Caravage est considéré comme le père du baroque, avec son utilisation du
+    clair-obscur, de la représentation réaliste des personnages, du dramatique.
+
+- title: La Mise au tombeau
+  artist: Le Caravage
+  year: 1603
+  image: /images/caravage_1603.jpg
+  tags:
+    - baroque
+  rating: 3.5
+  notes: |
+    Caravage est considéré comme le père du baroque, avec son utilisation du
+    clair-obscur, de la représentation réaliste des personnages, du dramatique.
+
+- title: Baldaquin de Saint Pierre
+  artist: Bernini
+  year: 1633
+  image: /images/bernini_1633.jpg
+  tags:
+    - baroque
+  rating: 4
+  notes: |
+    Réponse en partie à la sobriété de la Réforme, la Contre-Réforme s'enfonce
+    encore plus dans le grandiose et le spectaculaire.
+
+- title: L'Extase de sainte Thérèse
+  artist: Bernini
+  year: 1652
+  image: /images/bernini_1652.jpg
+  tags:
+    - baroque
   rating: 3
-  note: |
-    Christ Pantocrator : représentation artistique de Jésus Christ dans son corps glorieux
-    par opposition aux représentations plus humaines du Christ souffrant la Passion sur la Croix,
-    ou celle de l'Enfant-Jésus
+  notes: |
+    Réponse en partie à la sobriété de la Réforme, la Contre-Réforme s'enfonce
+    encore plus dans le grandiose et le spectaculaire.
+
+- title: Portrait de Pieter van den Broecke
+  artist: Frans Hals
+  year: 1633
+  image: /images/hals_1633.jpg
+  tags:
+    - baroque
+  rating: 2
+
+- title: Nature morte aux citrons et oranges avec une rose
+  artist: Francisco de Zurbarán
+  year: 1633
+  image: /images/zurbaran_1633.jpg
+  tags:
+    - baroque
+  rating: 2
+
+- title: Le Jugement de Salomon
+  artist: Nicolas Poussin
+  year: 1649
+  image: /images/poussin_1649.jpg
+  tags:
+    - classicisme
+  rating: 1.5
+  notes: |
+    Poussin est considéré comme le père du classicisme. Il a donné son nom au
+    mouvement dit poussiniste, qui prône la supériorité du dessin et de la
+    composition sur la couleur, en opposition au rubénisme. Le milieu du XVIIe
+    siècle est marqué par une quête de légitimité du statut de peintre. Pour se
+    faire, ils se rapprochent spirituellement de la poésie, elle respectée
+    depuis les grecques, et donc veulent s'intellectualiser (création de
+    l'Academie en 1648, Academie étant le nom de l'école de Platon). Ils y
+    apprennent l'anatomie, la perspective, se rapprochent en ça des sciences.
+
+- title: Triomphe du nom de Jésus
+  artist: Giovanni Battista Gaulli
+  year: 1670
+  image: /images/gaulli_1670.jpg
+  tags:
+    - baroque
+  rating: 3.5
+
+- title: Moïse défendant les filles de Jethro
+  artist: Charles Le Brun
+  year: 1686
+  image: /images/lebrun_1686.jpg
+  tags:
+    - classicisme
+  rating: 2
+
+- title: L'Embarquement pour Cythère
+  artist: Antoine Watteau
+  year: 1718
+  image: /images/watteau_1718.jpg
+  tags:
+    - rococo
+  rating: 1.5
+
+- title: La Raie
+  artist: Jean Siméon Chardin
+  year: 1728
+  image: /images/chardin_1728.jpg
+  tags:
+    - rococo
+  rating: 2.5
+
+- title: Ruines Antiques
+  artist: Giovanni Niccolò Servandoni
+  year: 1731
+  image: /images/servandoni_1731.jpg
+  tags:
+    - classicisme
+    - neoclassicisme
+  rating: 3
+
+- title: La Carrière d'une prostituée
+  artist: William Hogarth
+  year: 1732
+  image: /images/hogarth_1732.jpg
+  tags:
+    - pré-romantisme
+  rating: 1.5
+
+- title: Marriage A-la-Mode (I)
+  artist: William Hogarth
+  year: 1743
+  image: /images/hogarth_1743.jpg
+  tags:
+    - pré-romantisme
+  rating: 2.0
+
+- title: Portrait présumé de Marie-Louise O'Murphy
+  artist: François Boucher
+  year: 1752
+  image: /images/boucher_1752.jpg
+  tags:
+    - rococo
+  rating: 1.5
+
+- title: Arche en ruine
+  artist: Francesco Guardi
+  year: 1760
+  image: /images/guardi_1760.jpg
+  tags:
+    - rococo
+  rating: 3.5
+
+- title: Piété Filiale
+  artist: Jean-Baptiste Greuze
+  year: 1763
+  image: /images/greuze_1763.jpg
+  tags:
+    - morale
+  rating: 2.5
+
+- title: Les Hasards heureux de l'escarpolette
+  artist: Jean-Honoré Fragonard
+  year: 1767
+  image: /images/fragonard_1767.jpg
+  tags:
+    - rococo
+  rating: 2.5
+
+- title: L'Ile de l'Amour
+  artist: Jean-Honoré Fragonard
+  year: 1770
+  image: /images/fragonard_1770.jpg
+  tags:
+    - rococo
+  rating: 3.0
+
+- title: Le grand prêtre Corésus se sacrifie pour sauver Callirhoé
+  artist: Jean-Honoré Fragonard
+  year: 1765
+  image: /images/fragonard_1765.jpg
+  tags:
+    - rococo
+  rating: 3.5
+
+- title: Marine avec naufrage
+  artist: Philippe-Jacques de Loutherbourg
+  year: 1769
+  image: /images/loutherbourg_1769.jpg
+  tags:
+    - romantisme
+  rating: 3
+
+- title: The Defeat of the Spanish Armada
+  artist: Philippe-Jacques de Loutherbourg
+  year: 1796
+  image: /images/loutherbourg_1796.jpg
+  tags:
+    - romantisme
+  rating: 3.5
+
+- title: Coalbrookdale de nuit
+  artist: Philippe-Jacques de Loutherbourg
+  year: 1801
+  image: /images/loutherbourg_1801.jpg
+  tags:
+    - romantisme
+  rating: 3
+
+- title: L'Incendie de l'Hôtel-Dieu
+  artist: Jean-Baptiste-François Génillion
+  year: 1772
+  image: /images/genillion_1772.jpg
+  tags:
+    - neoclassicisme
+  rating: 3
+
+- title: Bélisaire demandant l’aumône
+  artist: Jacques-Louis David
+  year: 1780
+  image: /images/david_1780.jpg
+  tags:
+    - neoclassicisme
+  rating: 3
+
+- title: La Douleur d'Andromaque
+  artist: Jacques-Louis David
+  year: 1783
+  image: /images/david_1783.jpg
+  tags:
+    - neoclassicisme
+  rating: 3
+
+- title: Le Serment des Horaces
+  artist: Jacques-Louis David
+  year: 1784
+  image: /images/david_1784.jpg
+  tags:
+    - neoclassicisme
+  rating: 3
+
+- title: Le Cauchemar
+  artist: Johann Heinrich Füssli
+  year: 1781
+  image: /images/fussli_1781.jpg
+  tags:
+    - neoclassicisme
+  rating: 2.5
+
+- title: Démolition de l'église Saint-Jean-en-Grève
+  artist: Hubert Robert
+  year: 1800
+  image: /images/robert_1800.jpg
+  tags:
+    - neoclassicisme
+  rating: 2.5
+
+- title: Le Sacre de Napoléon
+  artist: Jacques-Louis David
+  year: 1807
+  image: /images/david_1807.jpg
+  tags:
+    - neoclassicisme
+  rating: 2
+
+- title: Le Radeau de la Méduse
+  artist: Théodore Géricault
+  year: 1818
+  image: /images/gericault_1818.jpg
+  tags:
+    - romantisme
+  rating: 3
+
+- title: La Liberté guidant le peuple
+  artist: Eugène Delacroix
+  year: 1830
+  image: /images/delacroix_1830.jpg
+  tags:
+    - romantisme
+  rating: 2.5
+
+- title: Louise de Broglie
+  artist: Jean-Auguste-Dominique Ingres
+  year: 1845
+  image: /images/ingres_1845.jpg
+  tags:
+    - neoclassicisme
+  rating: 3
+
+- title: Bonjour Monsieur Courbet
+  artist: Gustave Courbet
+  year: 1854
+  image: /images/courbet_1854.jpg
+  tags:
+    - realisme
+  rating: 3
+  notes: |
+    Courbet est considéré comme le père du réalisme, avec son refus de l'idéalisation
+    et de la stylisation, pour représenter la réalité telle qu'elle est, sans
+    fard ni embellissement. Il se tourne vers les sujets de la vie quotidienne,
+    les gens du peuple, les paysages, les scènes de genre, pour les représenter
+    avec dignité et réalisme. C'est une vraie rupture avec l'académisme et ses
+    sujets mythologiques et historiques.
+
+- title: Autoportrait au chien noir
+  artist: Gustave Courbet
+  year: 1844
+  image: /images/courbet_1844.jpg
+  tags:
+    - realisme
+  rating: 3.5
+
+- title: Le Désespéré
+  artist: Gustave Courbet
+  year: 1845
+  image: /images/courbet_1845.jpg
+  tags:
+    - realisme
+  rating: 3.5
+
+- title: Des glaneuses
+  artist: Jean-François Millet
+  year: 1857
+  image: /images/millet_1857.jpg
+  tags:
+    - realisme
+  rating: 3
+  notes: |
+    Changement de sujet pour les peintres réalistes, qui se tournent vers les
+    paysans, les ouvriers, les gens du peuple, pour les représenter avec dignité
+    et réalisme, en opposition aux représentations idéalisées de la bourgeoisie
+    et de l'aristocratie.
+
+- title: Les Remords
+  artist: William Bouguereau
+  year: 1862
+  image: /images/bouguereau_1862.jpg
+  tags:
+    - academisme
+  rating: 2
+
+- title: Le Déjeuner sur l'herbe
+  artist: Édouard Manet
+  year: 1863
+  image: /images/manet_1863.jpg
+  tags:
+    - réalisme
+  rating: 1.5
+
+- title: L'Exécution de Maximilien
+  artist: Édouard Manet
+  year: 1868
+  image: /images/manet_1868.jpg
+  tags:
+    - réalisme
+  rating: 3
+
+- title: Pollice verso
+  artist: Jean-Léon Gérôme
+  year: 1872
+  image: /images/gerome_1872.jpg
+  tags:
+    - academisme
+  rating: 3
+
+- title: Impression soleil Levant
+  artist: Claude Monet
+  year: 1872
+  image: /images/monet_1872.jpg
+  tags:
+    - impressionnisme
+  rating: 3
+
+- title: Raboteurs de parquet
+  artist: Gustave Caillebotte
+  year: 1875
+  image: /images/caillebotte_1875.jpg
+  tags:
+    - realisme
+  rating: 3
+
+- title: Phèdre
+  artist: Alexandre Cabanel
+  year: 1880
+  image: /images/cabanel_1880.jpg
+  tags:
+    - academisme
+    - orientalisme
+  rating: 3
+
+- title: Les Énervés de Jumièges
+  artist: Évariste-Vital Luminais
+  year: 1880
+  image: /images/luminais_1880.jpg
+  tags:
+    - academisme
+  rating: 2
+
+- title: Le Déjeuner des canotiers
+  artist: Auguste Renoir
+  year: 1880
+  image: /images/renoir_1880.webp
+  tags:
+    - impressionnisme
+  rating: 2.5
+
+- title: Le Rêve
+  artist: Édouard Detaille
+  year: 1888
+  image: /images/detaille_1888.jpg
+  tags:
+    - impressionnisme
+  rating: 2.5
+
+- title: Autoportrait à l'oreille bandée
+  artist: Vincent van Gogh
+  year: 1889
+  image: /images/vangogh_1889.jpg
+  tags:
+    - post-impressionnisme
+  rating: 2
+
+- title: Paysage Tahitien
+  artist: Paul Gauguin
+  year: 1891
+  image: /images/gauguin_1891.jpg
+  tags:
+    - post-impressionnisme
+  rating: 2
+
+- title: Cathédrale de Rouen
+  artist: Claude Monet
+  year: 1892
+  image: /images/monet_1892.jpeg
+  tags:
+    - impressionnisme
+  rating: 3.5
+
+- title: The Brook
+  artist: Paul Cézanne
+  year: 1898
+  image: /images/cezanne_1898.jpg
+  tags:
+    - impressionnisme
+  rating: 3.5
+
+- title: Autoportrait
+  artist: Henri Matisse
+  year: 1900
+  image: /images/matisse_1900.jpg
+  tags:
+    - fauvisme
+  rating: 2.5
+
+- title: Estaque
+  artist: André Derain
+  year: 1905
+  image: /images/derain_1905.jpg
+  tags:
+    - fauvisme
+  rating: 2.5
+
+- title: La Raie Verte
+  artist: Henri Matisse
+  year: 1905
+  image: /images/matisse_1905.jpeg
+  tags:
+    - fauvisme
+  rating: 2
+
+- title: Restaurant de la Machine à Bougival
+  artist: Maurice de Vlaminck
+  year: 1905
+  image: /images/vlaminck_1905.jpg
+  tags:
+    - fauvisme
+  rating: 3
+
+- title: Le Viaduc à l’Estaque
+  artist: Georges Braque
+  year: 1908
+  image: /images/braque_1908.png
+  tags:
+    - fauvisme
+    - cubisme
+  rating: 3
+
+- title: Violon et chandelier
+  artist: Georges Braque
+  year: 1910
+  image: /images/braque_1910.jpg
+  tags:
+    - cubisme
+  rating: 3
+
+- title: Nus dans la forêt
+  artist: Fernand Léger
+  year: 1910
+  image: /images/leger_1910.jpg
+  tags:
+    - cubisme
+  rating: 3
+
+- title: La Noce
+  artist: Fernand Léger
+  year: 1911
+  image: /images/leger_1911.jpg
+  tags:
+    - cubisme
+  rating: 3
+
+- title: Bouteille de rhum et journal
+  artist: Juan Gris
+  year: 1914
+  image: /images/gris_1914.jpg
+  tags:
+    - cubisme
+  rating: 3
+
+- title: Le Coquelicot
+  artist: Kees van Dongen
+  year: 1919
+  image: /images/dongen_1919.webp
+  tags:
+    - fauvisme
+  rating: 3
