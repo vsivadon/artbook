@@ -3,6 +3,7 @@ import path from "path";
 import YAML from "yaml";
 import { Artwork } from "@/types/artwork";
 import MasonryGrid from "@/components/MasonryGrid";
+import Gallery from "@/components/Gallery";
 
 
 function getArtworks(): Omit<Artwork, "id">[] {
@@ -28,7 +29,7 @@ export default function Home() {
     <main className="p-8 bg-black min-h-screen text-white">
       <h1 className="text-3xl font-bold mb-6">Art Gallery</h1>
 
-      <MasonryGrid artworks={artworks} />
+      <Gallery artworks={artworks} />
 
     </main>
   );
