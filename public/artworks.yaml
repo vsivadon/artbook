@@ -1,0 +1,42 @@
+- title: Le Bassin aux nymphéas, harmonie verte
+  artist: Claude Monet
+  year: 1899
+  image: /images/monet_1899.jpeg
+  tags:
+    - impressionnisme
+  rating: 3.5
+
+- title: Intérieur d'une église à Utrecht
+  artist: Pieter Jansz Saenredam
+  year: 1644
+  image: /images/saenredam_1644.jpg
+  tags:
+    - neerlandais
+  rating: 2.5
+  notes: |
+    Moment de la Réforme protestante, aux Pays-Bas, on prône la simplicité et la sobriété dans les églises, pour se connecter à Dieu sans distraction.
+    A contraster avec Bernini et ses effets décoratifs grandioses, très chargées et décorées, pour impressionner les fidèles et les rapprocher de Dieu par la beauté et la grandeur.
+
+- title: L'École d'Athènes
+  artist: Raphaël
+  year: 1509
+  image: /images/raphael_1509.webp
+  tags:
+    - renaissance
+  rating: 3
+
+- title: Marat assassiné
+  artist: Jacques-Louis David
+  year: 1793
+  image: /images/david_1793.jpg
+  tags:
+    - neoclassicisme
+  rating: 4.5
+
+- title: Guernica
+  artist: Pablo Picasso
+  year: 1937
+  image: /images/picasso_1937.avif
+  tags:
+    - cubisme
+  rating: 3
