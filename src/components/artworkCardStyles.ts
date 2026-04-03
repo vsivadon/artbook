@@ -1,5 +1,5 @@
 export const artworkCardStyles = {
-  card: "bg-zinc-900 rounded-2xl overflow-hidden shadow-lg",
+  card: "bg-zinc-900 rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition",
   image: "w-full h-auto object-contain",
   content: "p-4",
   title: "text-lg font-semibold",

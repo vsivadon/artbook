@@ -2,7 +2,6 @@ import fs from "fs";
 import path from "path";
 import YAML from "yaml";
 import { Artwork } from "@/types/artwork";
-import ArtworkCard from "@/components/ArtworkCard";
 import MasonryGrid from "@/components/MasonryGrid";
 
 
@@ -18,8 +17,6 @@ function slugify(text: string) {
     .replace(/\s+/g, "-")
     .replace(/[^\w-]+/g, "");
 }
-
-
 
 export default function Home() {
   const artworks: Artwork[] = getArtworks().map((art) => ({
