@@ -8,6 +8,7 @@ import TagSelect from "@/components/ui/TagSelect";
 export default function Gallery({ artworks }: { artworks: Artwork[] }) {
   const [search, setSearch] = useState("");
   const [isOpen, setIsOpen] = useState(false);
+  const [sort, setSort] = useState<"none" | "year-asc" | "year-desc">("none");
 
   const [filters, setFilters] = useState<{
     tags: string[];
@@ -34,6 +35,16 @@ export default function Gallery({ artworks }: { artworks: Artwork[] }) {
       !filters.rating || art.rating >= filters.rating;
 
     return matchesSearch && matchesTags && matchesRating;
+  });
+
+  const sorted = [...filtered].sort((a, b) => {
+    if (sort === "year-asc") {
+      return (a.year || 0) - (b.year || 0);
+    }
+    if (sort === "year-desc") {
+      return (b.year || 0) - (a.year || 0);
+    }
+    return 0;
   });
 
   const allTags = Array.from(new Set(artworks.flatMap((a) => a.tags)));
@@ -126,6 +137,42 @@ export default function Gallery({ artworks }: { artworks: Artwork[] }) {
         >
           Reset filters
         </button>
+
+      <div className="mb-6">
+        <p className="text-sm mb-2 text-zinc-400">Sort by</p>
+
+        <div className="flex flex-col gap-2">
+          <button
+            onClick={() => setSort("year-desc")}
+            className={`px-2 py-1 rounded text-xs ${
+              sort === "year-desc"
+                ? "bg-white text-black"
+                : "bg-zinc-800 text-zinc-300"
+            }`}
+          >
+            Newest first
+          </button>
+
+          <button
+            onClick={() => setSort("year-asc")}
+            className={`px-2 py-1 rounded text-xs ${
+              sort === "year-asc"
+                ? "bg-white text-black"
+                : "bg-zinc-800 text-zinc-300"
+            }`}
+          >
+            Oldest first
+          </button>
+
+          <button
+            onClick={() => setSort("none")}
+            className="px-2 py-1 rounded text-xs bg-zinc-700 text-zinc-300"
+          >
+            Default
+          </button>
+        </div>
+      </div>
+
       </aside>
 
       {/* 🖼️ MAIN CONTENT */}
@@ -145,7 +192,7 @@ export default function Gallery({ artworks }: { artworks: Artwork[] }) {
         </p>
 
         {/* GALLERY */}
-        <MasonryGrid artworks={filtered} />
+        <MasonryGrid artworks={sorted} />
       </div>
     </div>
   );
