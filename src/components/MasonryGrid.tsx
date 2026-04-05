@@ -9,9 +9,9 @@ import { Artwork } from "@/types/artwork";
 
 const breakpoints = {
   default: 4,
-  1024: 3,
-  768: 2,
-  500: 1,
+  1280: 3,
+  1024: 2,
+  640: 1,
 };
 
 export default function MasonryGrid({ artworks }: { artworks: Artwork[] }) {
@@ -21,8 +21,8 @@ export default function MasonryGrid({ artworks }: { artworks: Artwork[] }) {
     <>
       <Masonry
         breakpointCols={breakpoints}
-        className="flex gap-6"
-        columnClassName="space-y-6"
+        className="flex gap-4"
+        columnClassName="space-y-4"
       >
         {artworks.map((artwork) => (
           <div key={artwork.id} onClick={() => setSelected(artwork)}>

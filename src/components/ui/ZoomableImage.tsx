@@ -59,14 +59,21 @@ export default function ZoomableImage({ src, alt }: { src: string; alt: string }
           cursor: scale > 1 ? "grab" : "zoom-in",
         }}
       >
-        <Image
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
           src={src}
           alt={alt}
-          width={1200}
-          height={800}
-          className="max-h-[90vh] w-auto h-auto object-contain select-none"
           draggable={false}
+          className={`
+            select-none
+            ${scale === 1 
+              ? "max-h-[90vh] max-w-[90vw] object-contain" 
+              : "w-auto h-auto object-contain"
+            }
+          `}
         />
+
+
       </div>
     </div>
   );

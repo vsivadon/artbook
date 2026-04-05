@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import MasonryGrid from "@/components/MasonryGrid";
 import { Artwork } from "@/types/artwork";
 import TagSelect from "@/components/ui/TagSelect";
@@ -9,6 +9,8 @@ export default function Gallery({ artworks }: { artworks: Artwork[] }) {
   const [search, setSearch] = useState("");
   const [isOpen, setIsOpen] = useState(false);
   const [sort, setSort] = useState<"none" | "year-asc" | "year-desc">("none");
+  const inputRef = useRef<HTMLInputElement>(null);
+
 
   const [filters, setFilters] = useState<{
     tags: string[];
@@ -17,6 +19,46 @@ export default function Gallery({ artworks }: { artworks: Artwork[] }) {
     tags: [],
     rating: null,
   });
+
+  useEffect(() => {
+    const handleKey = (e: KeyboardEvent) => {
+      const target = e.target as HTMLElement;
+
+      const isTyping =
+        target.tagName === "INPUT" ||
+        target.tagName === "TEXTAREA" ||
+        target.isContentEditable;
+
+
+      if ((e.ctrlKey || e.metaKey) && e.key === "f") {
+        e.preventDefault();
+        inputRef.current?.focus();
+        inputRef.current?.select();
+        return;
+      }
+
+      if (e.key === "Escape") {
+        // si on est dans l'input → on sort
+        if (document.activeElement === inputRef.current) {
+          inputRef.current?.blur();
+        }
+        // Ferme les filtres
+        setIsOpen(false);
+        return
+      }
+
+      if (isTyping) return;
+
+      if (e.key === "s") {
+        e.preventDefault();
+        setIsOpen((prev) => !prev);
+      }
+    };
+
+    window.addEventListener("keydown", handleKey);
+    return () => window.removeEventListener("keydown", handleKey);
+  }, []);
+
 
   // 🔍 + 🎛️ FILTRAGE
   const filtered = artworks.filter((art) => {
@@ -179,6 +221,7 @@ export default function Gallery({ artworks }: { artworks: Artwork[] }) {
       <div className="p-6">
         {/* SEARCH */}
         <input
+          ref={inputRef}
           type="text"
           placeholder="Search artworks..."
           value={search}
