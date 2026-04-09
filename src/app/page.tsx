@@ -30,6 +30,14 @@ async function getArtworks(): Promise<Omit<Artwork, "id">[]> {
   sheet.eachRow((row, rowNumber) => {
     if (rowNumber === 1) return;
 
+    const cellValue = row.getCell(headers.image).value;
+    let image_path;
+    if (cellValue?.toString().startsWith("https")) {
+      image_path = String(cellValue);
+    } else {
+      image_path = "/images/" + String(cellValue ?? "");
+    }
+
     rows.push({
       title: String(row.getCell(headers.title).value ?? ""),
       artist: String(row.getCell(headers.artist).value ?? ""),
@@ -39,9 +47,7 @@ async function getArtworks(): Promise<Omit<Artwork, "id">[]> {
         .split(",")
         .map((t) => t.trim()),
       notes: String(row.getCell(headers.notes).value ?? ""),
-      image:
-        "/images/" +
-        String(row.getCell(headers.image).value ?? ""),
+      image: image_path,
     });
   });
 
