@@ -62,11 +62,15 @@ function slugify(text: string) {
     .replace(/[^\w-]+/g, "");
 }
 
+function shuffleArray<T>(array: T[]): T[] {
+  return [...array].sort(() => Math.random() - 0.5)
+}
+
 export default async function Home() {
-  const artworks: Artwork[] = (await getArtworks()).map((art) => ({
+  const artworks: Artwork[] = shuffleArray((await getArtworks()).map((art) => ({
     ...art,
     id: slugify(art.title + "-" + art.artist),
-  }));
+  })));
 
   return (
     <main className="p-8 bg-black min-h-screen text-white">
