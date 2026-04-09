@@ -1,15 +1,53 @@
-import fs from "fs";
 import path from "path";
-import YAML from "yaml";
 import { Artwork } from "@/types/artwork";
 import Gallery from "@/components/Gallery";
 
+import ExcelJS from "exceljs";
 
-function getArtworks(): Omit<Artwork, "id">[] {
-  const filePath = path.join(process.cwd(), "public", "artworks.yaml");
-  const file = fs.readFileSync(filePath, "utf8");
-  return YAML.parse(file);
+
+// function getArtworks(): Omit<Artwork, "id">[] {
+//   const filePath = path.join(process.cwd(), "public", "artworks.yaml");
+//   const file = fs.readFileSync(filePath, "utf8");
+//   return YAML.parse(file);
+// }
+
+async function getArtworks(): Promise<Omit<Artwork, "id">[]> {
+  const filePath = path.join(process.cwd(), "public", "artworks.xlsx");
+
+  const workbook = new ExcelJS.Workbook();
+  await workbook.xlsx.readFile(filePath);
+
+  const sheet = workbook.worksheets[0];
+
+  const rows: Omit<Artwork, "id">[] = [];
+
+  const headerRow = sheet.getRow(1);
+  const headers: Record<string, number> = {};
+  headerRow.eachCell((cell, colNumber) => {
+    headers[String(cell.value).toLowerCase().trim()] = colNumber;
+  });
+
+  sheet.eachRow((row, rowNumber) => {
+    if (rowNumber === 1) return;
+
+    rows.push({
+      title: String(row.getCell(headers.title).value ?? ""),
+      artist: String(row.getCell(headers.artist).value ?? ""),
+      year: Number(row.getCell(headers.year).value) || 0,
+      rating: Number(row.getCell(headers.rating).value) || 0,
+      tags: String(row.getCell(headers.tags).value ?? "")
+        .split(",")
+        .map((t) => t.trim()),
+      notes: String(row.getCell(headers.notes).value ?? ""),
+      image:
+        "/images/" +
+        String(row.getCell(headers.image).value ?? ""),
+    });
+  });
+
+  return rows;
 }
+
 
 function slugify(text: string) {
   return text
@@ -18,8 +56,8 @@ function slugify(text: string) {
     .replace(/[^\w-]+/g, "");
 }
 
-export default function Home() {
-  const artworks: Artwork[] = getArtworks().map((art) => ({
+export default async function Home() {
+  const artworks: Artwork[] = (await getArtworks()).map((art) => ({
     ...art,
     id: slugify(art.title + "-" + art.artist),
   }));
