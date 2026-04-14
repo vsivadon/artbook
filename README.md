@@ -1,6 +1,6 @@
 # ArtBook
 
-[screenshot](public/screenshot.png)
+![screenshot](public/screenshot.png)
 
 Pour lancer le site (dev) :
 
